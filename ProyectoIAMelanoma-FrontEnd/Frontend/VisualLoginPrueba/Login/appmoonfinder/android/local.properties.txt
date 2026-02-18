@@ -1,0 +1,4 @@
+sdk.dir=C:\\Users\\Administrador\\AppData\\Local\\Android\\Sdk
+flutter.sdk=C:\\Users\\Administrador\\Desktop\\Flutter\\flutter
+flutter.buildMode=debug
+flutter.versionName=0.1.0

@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+Pillow
+torch
+torchvision
+numpy
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+text
+
+Añado test

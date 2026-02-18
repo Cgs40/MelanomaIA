@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div style="text-align: center; padding: 20px 0 10px 0;">
+            <img src="logo__salud2.png" alt="Logo FotoSalud" style="width: 250px; height: auto;">
+        </div>
+        <nav class="nav-menu">
+            <a href="diagnostico.html">Diagnóstico del Lunar</a>
+            <a href="historial.html">Historial de Diagnósticos</a>
+            <button id="logoutBtn" class="btn btn-danger">Cerrar Sesión</button>
+        </nav>
+
+        <h1>Datos</h1>
+        <form id="profileForm">
+
+
+
+
+
+
+
+
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" class="input-base">
+            <small class="error-msg"></small>
+            <label for="antecedentes">Antecedentes:</label>
+            <select id="antecedentes" name="antecedentes" class="input-base">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <small class="error-msg"></small>
+            <label for="profesion">Profesión:</label>
+            <input type="text" id="profesion" name="profesion" class="input-base">
+            <small class="error-msg"></small>
+            <label for="cp">Código Postal:</label>
+            <input type="text" id="cp" name="cp" class="input-base" placeholder="Ej: 28001">
+            <small class="error-msg"></small>
+
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 50px;">Guardar Datos</button>
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <img src="MEDAC_imagotipo_cuadr_blanco_RGB.png" alt="Logo MEDAC" class="footer-logo">
+        <div class="footer-content">
+            <p>&copy; 2026 Proyecto Melanoma | <a href="#">Aviso Legal</a> | <a href="#">Privacidad</a></p>
+            <p class="version">Versión 1.0.2</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

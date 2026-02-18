@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Contraseña</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-menu">
+            <a href="diagnostico.html">Diagnóstico del Lunar</a>
+            <a href="historial.html">Historial de Diagnósticos</a>
+            <a href="cambio-contrasena.html">Cambio de Contraseña</a>
+            <button id="logoutBtn" class="btn btn-danger">Cerrar Sesión</button>
+        </nav>
+
+        <h1>Cambio de Contraseña</h1>
+        <form id="changePasswordForm">
+            <label for="currentPassword">Contraseña Actual:</label>
+            <input type="password" id="currentPassword" name="current_password" class="input-base" required>
+            <label for="newPassword">Nueva Contraseña:</label>
+            <input type="password" id="newPassword" name="new_password" class="input-base" required>
+            <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <img src="MEDAC_imagotipo_cuadr_blanco_RGB.png" alt="Logo MEDAC" class="footer-logo">
+        <div class="footer-content">
+            <p>&copy; 2026 Proyecto Melanoma | <a href="#">Aviso Legal</a> | <a href="#">Privacidad</a></p>
+            <p class="version">Versión 1.0.2</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

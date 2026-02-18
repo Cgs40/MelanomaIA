@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-menu">
+            <a href="diagnostico.html">Diagnóstico del Lunar</a>
+            <a href="historial.html">Historial de Diagnósticos</a>
+            <a href="cambio-contrasena.html">Cambio de Contraseña</a>
+            <a href="datos-personales.html">Datos Personales</a>
+            <button id="logoutBtn">Cerrar Sesión</button>
+        </nav>
+
+        <h1>Bienvenido</h1>
+        <p>Selecciona un servicio desde el menú de navegación.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(r => r.text())
+            .then(html => document.getElementById("footer").innerHTML = html);
+    </script>
+
+</body>
+
+</html>

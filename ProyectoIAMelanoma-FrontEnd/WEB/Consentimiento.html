@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consentimiento Informado - Diagnóstico del Lunar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="card-legal">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="logo__salud2.png" alt="FotoSalud.IA" style="height: 60px;">
+            </div>
+            <h2 style="color: #0056b3; text-align: center; margin-bottom: 20px;">Consentimiento Informado</h2>
+
+            <div class="legal-text-scroll">
+                <h3>1. Naturaleza de la Herramienta</h3>
+                <p>Esta aplicación, provista por <strong>FotoSalud.IA</strong> y desarrollada por MEDAC, utiliza
+                    algoritmos de Inteligencia Artificial para el análisis de imágenes. <strong>ESTA HERRAMIENTA NO
+                        PROPORCIONA UN DIAGNÓSTICO MÉDICO.</strong> Los resultados son estadísticos y de apoyo.</p>
+
+                <h3>2. Privacidad y Datos</h3>
+                <p>Al subir su imagen, autoriza su procesamiento anónimo por parte de FotoSalud.IA. Sus datos de
+                    contacto solo se utilizarán si es estrictamente necesario para derivarle a un especialista.
+                    Cumplimos rigurosamente con el RGPD.</p>
+
+                <h3>3. Responsabilidad</h3>
+                <p><strong>FotoSalud.IA</strong> no se hace responsable de las decisiones tomadas sin consultar a un
+                    facultativo. Ante cualquier duda, <strong>acuda siempre a su dermatólogo o centro de salud.</strong>
+                </p>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+            <div class="acceptance-area">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="legalCheck">
+                    <span class="checkmark-text">He leído, comprendo y acepto los términos de FotoSalud.IA.</span>
+                </label>
+
+                <button id="btnContinuar" class="btn btn-primary" disabled
+                    style="width: 100%; opacity: 0.5; cursor: not-allowed; margin-top: 15px;">
+                    Aceptar y Continuar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="MEDAC_imagotipo_cuadr_blanco_RGB.png" alt="Logo MEDAC" class="footer-logo">
+        <div class="footer-content">
+            <p>&copy; 2026 Proyecto Melanoma | <a href="#">Aviso Legal</a> | <a href="#">Privacidad</a></p>
+            <p class="version">Versión 1.0.2</p>
+        </div>
+    </footer>
+
+    <script>
+        const check = document.getElementById('legalCheck');
+        const btn = document.getElementById('btnContinuar');
+
+        check.addEventListener('change', function () {
+            if (this.checked) {
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                btn.style.cursor = 'pointer';
+            } else {
+                btn.disabled = true;
+                btn.style.opacity = '0.5';
+                btn.style.cursor = 'not-allowed';
+            }
+        });
+
+        btn.addEventListener('click', function () {
+            if (!this.disabled) window.location.href = 'perfil-del-usuario.html';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Diagnóstico del Lunar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-card">
+        <div class="login-header">
+            <img src="logo_inicio.png" alt="Logo FotoSalud" class="logo-header">
+        </div>
+
+        <div class="login-body">
+            <form id="loginForm">
+                <div>
+                    <label for="username"
+                        style="display: block; margin-bottom: 5px; color: #002b45; font-weight: bold;">Usuario</label>
+                    <input type="text" id="username" name="username" placeholder="TECNICO" required>
+                </div>
+
+                <div>
+                    <label for="password"
+                        style="display: block; margin-bottom: 5px; color: #002b45; font-weight: bold;">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Iniciar
+                </button>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" style="color: #0077b6; text-decoration: none; font-size: 0.9rem;">¿Olvidó su
+                        contraseña?</a>
+                </div>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <img src="MEDAC_imagotipo_cuadr_blanco_RGB.png" alt="Logo MEDAC" class="footer-logo">
+            <div class="footer-content">
+                <p>&copy; 2026 Proyecto Melanoma | <a href="#">Aviso Legal</a> | <a href="#">Privacidad</a></p>
+                <p class="version">Versión 1.0.2</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
